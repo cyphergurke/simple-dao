@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Simple DAO
+
+React app with DAO solidity Smart contract
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
