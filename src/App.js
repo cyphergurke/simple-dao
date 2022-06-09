@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { ConnectButton } from 'web3uikit';
+import Home from './pages/Home';
+import Proposal from './pages/Proposal';
+import { Routes, Route } from 'react-router-dom'
+import Logo from "./images/Logo.png"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='header'>
+        <img width="70px" src={Logo} alt="logo" />
+        <ConnectButton />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/proposal" element={<Proposal />}></Route>
+      </Routes>
+    </>
   );
 }
 
